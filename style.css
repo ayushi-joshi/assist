@@ -34,6 +34,7 @@ display: flex;
 flex-direction: column;
 align-items: start;
 justify-content: space-between;
+
 }
 .home1{
    background-color: gray;
@@ -344,7 +345,8 @@ height: 85%;
        display: flex;
        align-items: center; 
        width: 60%;
-       justify-content: space-between;
+       height: 100%;
+       justify-content: center;
        font-weight: bold;
        
     }
@@ -453,31 +455,31 @@ border: 1px solid gray;
   .slider:before {
     position: absolute;
     content: "";
-    height: 1.2em;
+    height: 1.4em;
     width: 1.4em;
     border-radius: 50%;
-    left: 10%;
-    bottom: 15%;
-    box-shadow: inset 8px -4px 0px 0px rgb(71, 170, 170);;
+    left: 8%;
+    bottom: 5%;
+    box-shadow: inset 8px -4px 0px 0px rgb(71, 170, 170);
     background: var(--background);
     transition: .5s;
   }
   
   input:checked + .slider {
-    background-color: rgb(31, 29, 29);;
+    background-color: rgb(31, 29, 29);
     
   }
   
   input:checked + .slider:before {
     transform: translateX(100%);
-    box-shadow: inset 15px -4px 0px 15px rgb(71, 170, 170);;
+    box-shadow: inset 15px -4px 0px 15px rgb(71, 170, 170);
   }
   @media(max-width:768px){
     .home-res{
         display: block;
         height: 40%;
         width: 40%;
-        
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -500,7 +502,8 @@ border: 1px solid gray;
         display: none;
     }
     .toggle{
-        width: 70%;
+        width: 60%;
+        
         
     }
     .toggle p{
@@ -519,6 +522,9 @@ display: none;
  /*position: relative;
 right: 2%;*/
     }
+    .b2 img{
+width: 100%;
+    }
     .icon1,.icon2{
         width: 45%;
         font-size: 12px;
@@ -528,6 +534,7 @@ right: 2%;*/
 }
 .box1,.box2{
     width: 45%;
+    height: 90%;
 }
 .b3 img{
     width: 95%;
@@ -547,5 +554,12 @@ right: 2%;*/
 .table-sec{
     height: 80%;
 }
+.d1{
+    width: 70%;
+}
 
+.d1 p{
+    font-size: 10px;
+    
+}
   }
